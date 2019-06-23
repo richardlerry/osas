@@ -2,7 +2,9 @@
 
 namespace App;
 
+use App\Http\Middleware\Authenticate;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * @property int $id
@@ -16,7 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $updated_at
  * @property RRole $rRole
  */
-class user extends Model
+class user extends Authenticatable
 {
     /**
      * @var array

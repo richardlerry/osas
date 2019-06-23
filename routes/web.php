@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard','dashboard@index');
+Route::get('/sanction','sanction@index');
+
+Route::resource('sanctionTitle','sanctionTitle');
+Route::resource('officeDesignation','officeDesignation');
+Route::resource('sanction','sanction',[
+    'names' => [
+        'index' => 'sanction',
+        'show' => 'sanction',
+    ]
+]);

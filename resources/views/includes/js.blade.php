@@ -108,5 +108,46 @@
             (m, i) => p < 0 || i < p ? `${m},` : m
         )
     }
+
+    $('table[id=data-table-buttons]').DataTable({
+        'paging'      : true,
+        'lengthChange': true,
+        'searching'   : true,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : true,
+        "aaSorting": [[3, "desc" ]]
+        ,dom: 'lBfrtip'
+        ,   buttons: [
+            { extend: 'copy', className: 'btn-sm',
+                exportOptions: {
+                    columns: [0,1,2,3]
+                }
+            },
+            { extend: 'csv', className: 'btn-sm' ,
+                exportOptions: {
+                    columns: [0,1,2,3]
+                }
+            },
+            { extend: 'excel', className: 'btn-sm',
+                exportOptions: {
+                    columns: [0,1,2,3]
+                }
+            },
+            { extend: 'pdf', className: 'btn-sm',
+                exportOptions: {
+                    columns: [0,1,2,3]
+                }
+            },
+            { extend: 'print', className: 'btn-sm',
+                exportOptions: {
+                    columns: [0,1,2,3]
+                }
+            },
+
+
+        ],
+    });
+
 </script>
 <!-- ================== END PAGE LEVEL JS ================== -->

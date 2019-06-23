@@ -23,7 +23,7 @@
     <div id="header" class="header navbar-default">
         <!-- begin navbar-header -->
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"> <b>Symp</b>ies</a>
+            <a href="index.html" class="navbar-brand"> <b>OSAS</b>MIS</a>
             <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -105,9 +105,9 @@
     <!-- end #header -->
 
 <!-- begin #sidebar -->
-@if(Auth::user()->role=='admin')
-    @include('layouts.sidenav.admin')
-@elseif(Auth::user()->role=='member')
+@if(Auth::user()->role_id==1)
+    @include('layouts.sidenav.osas')
+@elseif(Auth::user()->role_id!=1)
     @include('layouts.sidenav.member')
 @endif
 
