@@ -83,32 +83,6 @@
 
 
 
-            <li class="has-sub {{(Route::is('users')||Route::is('affiliates'))?'active':''}}">
-                <a href="javascript:;">
-                    <b class="caret"></b>
-                    <i class="fa fa-users"></i>
-                    <span>Users</span>
-                </a>
-                <ul class="sub-menu">
-                    <li class="{{Route::is('affiliates')?'active':''}}"><a href="{{url('affiliates')}}">Affiliate's List</a></li>
-                    <li class="{{Route::is('users')?'active':''}}"><a href="{{url('users')}}">User's List</a></li>
-
-                </ul>
-            </li>
-
-            <li class="has-sub {{(Route::is('tax')||Route::is('currency'))?'active':''}}">
-                <a href="javascript:;">
-                    <b class="caret"></b>
-                    <i class="fa fa-cogs"></i>
-                    <span>Configurations</span>
-                </a>
-                <ul class="sub-menu">
-                    <li class="{{Route::is('tax')?'active':''}}"><a href="{{url('tax')}}">Tax & Fees</a></li>
-                    <li class="{{Route::is('currency')?'active':''}}"><a href="{{url('currency')}}">Currencies</a></li>
-                    <li class="{{Route::is('compliance')?'active':''}}"><a href="{{url('compliance')}}">Compliance</a></li>
-
-                </ul>
-            </li>
 
 
             <!-- begin sidebar minify button -->

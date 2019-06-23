@@ -23,12 +23,12 @@
             <!-- begin col-3 -->
             <div class="col-lg-3 col-md-6">
                 <div class="widget widget-stats bg-success">
-                    <div class="stats-icon"><i class="fa fa-shopping-basket"></i></div>
+                    <div class="stats-icon"><i class="fa fa-users"></i></div>
                     <div class="stats-info">
-                        <h4>TOTAL PRODUCTS</h4>
+                        <h4>TOTAL Students</h4>
                         <p>
                             {{
-                             100
+                             \App\r_student_profile::all()->count()
                            }}
                         </p>
                     </div>
@@ -43,10 +43,10 @@
                 <div class="widget widget-stats bg-purple">
                     <div class="stats-icon"><i class="fa fa-link"></i></div>
                     <div class="stats-info">
-                        <h4>NEW STOCKS TODAY</h4>
+                        <h4>Sanctions</h4>
                         <p>
                             {{
-                                21
+                             \App\t_sanction::all()->count()
                             }}
                         </p>
                     </div>
@@ -59,12 +59,12 @@
             <!-- begin col-3 -->
             <div class="col-lg-3 col-md-6">
                 <div class="widget widget-stats bg-grey-darker">
-                    <div class="stats-icon"><i class="fa fa-truck"></i></div>
+                    <div class="stats-icon"><i class="fa fa-folder"></i></div>
                     <div class="stats-info">
-                        <h4>NEW ORDERS TODAY</h4>
+                        <h4>Financial Assistance</h4>
                         <p>
                             {{
-                               231
+                             \App\t_financial_assistance::all()->count()
                             }}
                         </p>
                     </div>
@@ -77,12 +77,12 @@
             <!-- begin col-3 -->
             <div class="col-lg-3 col-md-6">
                 <div class="widget widget-stats bg-black-lighter">
-                    <div class="stats-icon"><i class="fas fa-users"></i></div>
+                    <div class="stats-icon"><i class="fas fa-envelope"></i></div>
                     <div class="stats-info">
-                        <h4>TOTAL AFFILIATES</h4>
+                        <h4>Event Management</h4>
                         <p>
                             {{
-                               431
+                             \App\t_event_profile::all()->count()
                             }}
                         </p>
                     </div>

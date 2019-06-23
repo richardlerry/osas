@@ -25,6 +25,8 @@ Route::resource('sanctionTitle','sanctionTitle');
 Route::resource('officeDesignation','officeDesignation');
 Route::resource('student','student');
 Route::resource('course','course');
+Route::resource('assistance','assistance');
+Route::resource('assistanceTitle','assistanceTitle');
 Route::resource('sanction','sanction',[
     'names' => [
         'index' => 'sanction',
