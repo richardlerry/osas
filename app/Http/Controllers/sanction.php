@@ -72,7 +72,7 @@ class sanction extends Controller
         //
         $sanctions = t_sanction::with('rOffice','rSanctionTitle','rStudentProfile')->where('studP_id',$id)->get();
 
-        return view('pages.students.sanction-view',compact('sanctions'));
+        return ($sanctions->count())?view('pages.students.sanction-view',compact('sanctions')):abort(404);
     }
 
     /**

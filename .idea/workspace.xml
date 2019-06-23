@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02289fa4-2bac-4c7d-9e91-3da593f1b4e4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/osas-dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OSAS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OSAS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/students/student.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/css.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidenav/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidenav/osas.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/sanction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/sanction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,17 +25,17 @@
       <file leaf-file-name="web.php" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="158">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanction.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sanction.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="187" column="60" selection-start-line="187" selection-start-column="60" selection-end-line="188" selection-end-column="138" />
+            <state relative-caret-position="187">
+              <caret line="409" column="67" selection-start-line="409" selection-start-column="67" selection-end-line="409" selection-end-column="67" />
               <folding>
                 <element signature="e#12256#12285#0#HTML" expanded="true" />
                 <element signature="e#13126#13174#0#HTML" expanded="true" />
@@ -53,7 +46,13 @@
                 <element signature="e#17072#17092#0#HTML" expanded="true" />
                 <element signature="e#18004#18024#0#HTML" expanded="true" />
                 <element signature="e#18879#18899#0#HTML" expanded="true" />
-                <element signature="e#23261#23281#0#HTML" expanded="true" />
+                <element signature="e#28543#28563#0#HTML" expanded="true" />
+                <element signature="e#31789#31809#0#HTML" expanded="true" />
+                <element signature="e#35872#35901#0#HTML" expanded="true" />
+                <element signature="e#36744#36792#0#HTML" expanded="true" />
+                <element signature="e#37320#37344#0#HTML" expanded="true" />
+                <element signature="e#37606#37624#0#HTML" expanded="true" />
+                <element signature="e#39754#39772#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,35 +76,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/css.blade.php">
+      <file leaf-file-name="sanction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/sanction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="officeDesignation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/officeDesignation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+            <state relative-caret-position="149">
+              <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
+                <marker date="1561297323245" expanded="true" signature="2867:2903" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanction.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/sanction.php">
+      <file leaf-file-name="student.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/students/student.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="103" column="59" selection-start-line="103" selection-start-column="59" selection-end-line="103" selection-end-column="59" />
+            <state relative-caret-position="442">
+              <caret line="357" lean-forward="true" selection-start-line="109" selection-end-line="357" />
+              <folding>
+                <element signature="e#6446#6466#0#HTML" expanded="true" />
+                <element signature="e#9690#9710#0#HTML" expanded="true" />
+                <element signature="e#13907#13936#0#HTML" expanded="true" />
+                <element signature="e#14777#14825#0#HTML" expanded="true" />
+                <element signature="e#15361#15385#0#HTML" expanded="true" />
+                <element signature="e#15688#15706#0#HTML" expanded="true" />
+                <element signature="e#18058#18076#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
-                <marker date="1561291669525" expanded="true" signature="2834:2870" ph="..." />
               </folding>
             </state>
           </provider>
@@ -114,8 +122,8 @@
       <file leaf-file-name="sanction-view.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="88" column="137" selection-start-line="88" selection-start-column="137" selection-end-line="88" selection-end-column="137" />
+            <state relative-caret-position="34">
+              <caret line="2" column="53" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="53" />
               <folding>
                 <element signature="e#3037#3062#0#HTML" expanded="true" />
                 <element signature="e#6438#6456#0#HTML" expanded="true" />
@@ -127,8 +135,8 @@
       <file leaf-file-name="student.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="238">
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="45" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -160,9 +168,12 @@
       <find>not li</find>
       <find>data-table-button</find>
       <find>fname</find>
-      <find>dashboard</find>
       <find>lname</find>
       <find>view</find>
+      <find>course</find>
+      <find>dashboard</find>
+      <find>rStudentProfile</find>
+      <find>sanctions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,12 +211,14 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/sanctionTitle.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/officeDesignation.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/css.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/student.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/sidenav/osas.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/course.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/student.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/students/student.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/sanction.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php" />
       </list>
     </option>
   </component>
@@ -512,12 +525,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561118885673</updated>
       <workItem from="1561118892242" duration="852000" />
-      <workItem from="1561119768062" duration="22223000" />
+      <workItem from="1561119768062" duration="27419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23075000" />
+    <option name="totallyTimeSpent" value="28271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -574,12 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -840,53 +847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_21_124110_create_t_sanctions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/r_student_profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="65" column="30" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="187" column="60" selection-start-line="187" selection-start-column="60" selection-end-line="188" selection-end-column="138" />
-          <folding>
-            <element signature="e#12256#12285#0#HTML" expanded="true" />
-            <element signature="e#13126#13174#0#HTML" expanded="true" />
-            <element signature="e#13710#13734#0#HTML" expanded="true" />
-            <element signature="e#14037#14055#0#HTML" expanded="true" />
-            <element signature="e#16407#16425#0#HTML" expanded="true" />
-            <element signature="e#12917#12941#0#HTML" expanded="true" />
-            <element signature="e#17072#17092#0#HTML" expanded="true" />
-            <element signature="e#18004#18024#0#HTML" expanded="true" />
-            <element signature="e#18879#18899#0#HTML" expanded="true" />
-            <element signature="e#23261#23281#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,10 +861,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_21_124110_create_t_sanctions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="45" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/sanction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+            <marker date="1561297323245" expanded="true" signature="2867:2903" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/students/sanction-view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="88" column="137" selection-start-line="88" selection-start-column="137" selection-end-line="88" selection-end-column="137" />
+        <state relative-caret-position="34">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="53" />
           <folding>
             <element signature="e#3037#3062#0#HTML" expanded="true" />
             <element signature="e#6438#6456#0#HTML" expanded="true" />
@@ -908,13 +917,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/sanction.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/students/student.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="103" column="59" selection-start-line="103" selection-start-column="59" selection-end-line="103" selection-end-column="59" />
+        <state relative-caret-position="442">
+          <caret line="357" lean-forward="true" selection-start-line="109" selection-end-line="357" />
           <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-            <marker date="1561291669525" expanded="true" signature="2834:2870" ph="..." />
+            <element signature="e#6446#6466#0#HTML" expanded="true" />
+            <element signature="e#9690#9710#0#HTML" expanded="true" />
+            <element signature="e#13907#13936#0#HTML" expanded="true" />
+            <element signature="e#14777#14825#0#HTML" expanded="true" />
+            <element signature="e#15361#15385#0#HTML" expanded="true" />
+            <element signature="e#15688#15706#0#HTML" expanded="true" />
+            <element signature="e#18058#18076#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/students/sanction.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="409" column="67" selection-start-line="409" selection-start-column="67" selection-end-line="409" selection-end-column="67" />
+          <folding>
+            <element signature="e#12256#12285#0#HTML" expanded="true" />
+            <element signature="e#13126#13174#0#HTML" expanded="true" />
+            <element signature="e#13710#13734#0#HTML" expanded="true" />
+            <element signature="e#14037#14055#0#HTML" expanded="true" />
+            <element signature="e#16407#16425#0#HTML" expanded="true" />
+            <element signature="e#12917#12941#0#HTML" expanded="true" />
+            <element signature="e#17072#17092#0#HTML" expanded="true" />
+            <element signature="e#18004#18024#0#HTML" expanded="true" />
+            <element signature="e#18879#18899#0#HTML" expanded="true" />
+            <element signature="e#28543#28563#0#HTML" expanded="true" />
+            <element signature="e#31789#31809#0#HTML" expanded="true" />
+            <element signature="e#35872#35901#0#HTML" expanded="true" />
+            <element signature="e#36744#36792#0#HTML" expanded="true" />
+            <element signature="e#37320#37344#0#HTML" expanded="true" />
+            <element signature="e#37606#37624#0#HTML" expanded="true" />
+            <element signature="e#39754#39772#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

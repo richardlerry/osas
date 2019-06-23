@@ -23,6 +23,8 @@ Route::get('/sanction','sanction@index');
 
 Route::resource('sanctionTitle','sanctionTitle');
 Route::resource('officeDesignation','officeDesignation');
+Route::resource('student','student');
+Route::resource('course','course');
 Route::resource('sanction','sanction',[
     'names' => [
         'index' => 'sanction',

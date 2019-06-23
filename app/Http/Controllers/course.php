@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\r_office;
-use App\r_sanction_title;
-use App\r_student_profile;
-use App\t_sanction;
+use App\r_course;
 use Illuminate\Http\Request;
 
-class student extends Controller
+class course extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +15,6 @@ class student extends Controller
     public function index()
     {
         //
-        $students = r_student_profile::with('rCourse','tFinancialAssistances','tSanctions')->get();
-        return view('pages.students.student',compact('students'));
     }
 
     /**
@@ -41,30 +36,6 @@ class student extends Controller
     public function store(Request $request)
     {
         //
-
-        $stud = new r_student_profile();
-
-        $stud->stud_no = $request->stud_no;
-        $stud->course_id = $request->get('course');
-        $stud->section = $request->section;
-        $stud->fname = $request->fname;
-        $stud->mname = $request->mname;
-        $stud->lname = $request->lname;
-        $stud->email = $request->email;
-        $stud->civilStatus = $request->civil;
-        $stud->mobileNo = $request->phone;
-        $stud->telephoneNo = $request->tel;
-        $stud->gender = $request->get('gender');
-        $stud->birthdate = $request->bdate;
-        $stud->homeno = $request->home;
-        $stud->street = $request->street;
-        $stud->province = $request->prov;
-        $stud->city = $request->city;
-        $stud->brgy = $request->brgy;
-        $stud->save();
-
-        return redirect()->back();
-
     }
 
     /**
@@ -99,6 +70,13 @@ class student extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        $course = r_course::where('course_id',$id)->first();
+        $course->title = $request->title_course;
+        $course->desc = $request->desc_course;
+        $course->save();
+
+        return redirect()->back();
     }
 
     /**
