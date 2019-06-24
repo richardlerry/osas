@@ -56,7 +56,6 @@
                             <th>Course</th>
                             <th>Contact No.</th>
                             <th>Date Created</th>
-                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -73,15 +72,6 @@
                                     {{$item->mobileNo}}
                                 </td>
                                 <td>{{ (new DateTime($item->created_at))->format('D M d, Y | h:i A') }}</td>
-                                <td>
-                                    <center>
-                                        @if($item->stat==1)
-                                            <a class="btn btn-info" href="{{action('sanction@show',$item->studP_id)}}" title="View"><i class="fas fa-folder text-white"></i></a>
-                                        @else
-                                            <a id=act  vals="{{$item->TAXP_ID}}" class="btn btn-success" data-toggle="modal" data-target="#activate"><i class="fas fa-undo text-white"></i></a>
-                                        @endif
-                                    </center>
-                                </td>
 
 
                             </tr>
@@ -95,7 +85,6 @@
                         <th>Course</th>
                         <th>Contact No.</th>
                         <th>Date Created</th>
-                        <th>Action</th>
                         </tfoot>
                     </table>
                 </div>
